@@ -1,14 +1,14 @@
 #!/bin/bash
 
-source_dir="$( dirname "${BASH_SOURCE[0]}" )/../@tinychange/new-react-lib/template/"
+source_dir="$( dirname "${BASH_SOURCE[0]}" )/../@tinychange/new-next/template/"
 if [[ "$1" == "" ]]
 then
-  read -p 'Enter your lib name: ' project_name
+  read -p 'Enter your project name: ' project_name
 else
   project_name=$1
 fi
 
-echo "Creating the lib..."
+echo "Creating new project..."
 cp -r $source_dir $project_name
 cp -r $source_dir"../README.md" $project_name
 
