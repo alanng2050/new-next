@@ -12,11 +12,11 @@ const nextConfig = {
 
   redirects: () => {
     return [
-      {
-        source: '/',
-        destination: '/dashboard',
-        permanent: false,
-      },
+      // {
+      //   source: '/',
+      //   destination: '/dashboard',
+      //   permanent: false,
+      // },
     ]
   },
   async rewrites() {
